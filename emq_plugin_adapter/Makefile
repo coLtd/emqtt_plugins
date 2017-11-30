@@ -1,4 +1,4 @@
-PROJECT = emq_plugin_template
+PROJECT = emq_plugin_adapter
 PROJECT_DESCRIPTION = EMQ Plugin Template
 PROJECT_VERSION = 2.3
 
@@ -18,4 +18,4 @@ include erlang.mk
 app:: rebar.config
 
 app.config::
-	./deps/cuttlefish/cuttlefish -l info -e etc/ -c etc/emq_plugin_template.conf -i priv/emq_plugin_template.schema -d data
+	./deps/cuttlefish/cuttlefish -l info -e etc/ -c etc/emq_plugin_adapter.conf -i priv/emq_plugin_adapter.schema -d data
